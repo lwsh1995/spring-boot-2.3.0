@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework.boot'
+version '2.3.0.BUILD-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(project(":spring-boot-project:spring-boot-dependencies"))
+    compile(project(":spring-boot-project:spring-boot-autoconfigure"))
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
